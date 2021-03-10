@@ -1,0 +1,183 @@
+local EC = Instance.new("ScreenGui")
+local Main = Instance.new("ImageButton")
+local Title = Instance.new("TextLabel")
+local Title_2 = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local AutoClicker = Instance.new("TextButton")
+local Shop = Instance.new("TextButton")
+local Worlds = Instance.new("TextButton")
+local CodePet = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+
+
+
+EC.Name = "EC"
+EC.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = EC
+Main.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.242424205, 0, 0.36233604, 0)
+Main.Size = UDim2.new(0, 485, 0, 237)
+Main.Image = "rbxassetid://2790389767"
+Main.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(8, 8, 248, 248)
+Main.Active = true
+Main.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0143737169, 0, 0, 0)
+Title.Size = UDim2.new(0, 141, 0, 55)
+Title.Font = Enum.Font.LuckiestGuy
+Title.Text = "ECONOMY"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Title_2.Name = "Title"
+Title_2.Parent = Main
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.275923342, 0, 0.10658554, 0)
+Title_2.Size = UDim2.new(0, 147, 0, 42)
+Title_2.Font = Enum.Font.LuckiestGuy
+Title_2.Text = "CRASHER "
+Title_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+TextLabel.Name = ""
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0125811528, 0, 0.137654781, 0)
+TextLabel.Size = UDim2.new(0, 108, 0, 23)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "made by v60x"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Name = ""
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.894359231, 0, 0.036568176, 0)
+TextLabel_2.Size = UDim2.new(0, 41, 0, 23)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "v2.1"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+AutoClicker.Name = "AutoClicker"
+AutoClicker.Parent = Main
+AutoClicker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoClicker.Position = UDim2.new(0.0259210523, 0, 0.33485508, 0)
+AutoClicker.Size = UDim2.new(0, 162, 0, 48)
+AutoClicker.Style = Enum.ButtonStyle.RobloxRoundButton
+AutoClicker.Font = Enum.Font.SourceSansBold
+AutoClicker.Text = "Autoclicker"
+AutoClicker.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoClicker.TextSize = 25.000
+AutoClicker.MouseButton1Down:connect(function()
+	while wait() do
+		workspace.Events.AddClick:FireServer()
+
+	end
+end)
+
+Shop.Name = "Shop"
+Shop.Parent = Main
+Shop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shop.Position = UDim2.new(0.0259210523, 0, 0.634035408, 0)
+Shop.Size = UDim2.new(0, 162, 0, 48)
+Shop.Style = Enum.ButtonStyle.RobloxRoundButton
+Shop.Font = Enum.Font.SourceSansBold
+Shop.Text = "Shop TP"
+Shop.TextColor3 = Color3.fromRGB(0, 0, 0)
+Shop.TextSize = 25.000
+Shop.MouseButton1Down:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(885.218506, 1022.69287, -579.251221)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+Worlds.Name = "Worlds"
+Worlds.Parent = Main
+Worlds.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Worlds.Position = UDim2.new(0.598932326, 0, 0.33485508, 0)
+Worlds.Size = UDim2.new(0, 162, 0, 48)
+Worlds.Style = Enum.ButtonStyle.RobloxRoundButton
+Worlds.Font = Enum.Font.SourceSansBold
+Worlds.Text = "Worlds"
+Worlds.TextColor3 = Color3.fromRGB(0, 0, 0)
+Worlds.TextSize = 25.000
+Worlds.MouseButton1Down:connect(function()
+	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(1418.98059, 1006.5567, -510.744293)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	wait(0.1)
+	pl.CFrame = location
+end)
+
+CodePet.Name = "CodePet"
+CodePet.Parent = Main
+CodePet.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CodePet.Position = UDim2.new(0.598932326, 0, 0.634035528, 0)
+CodePet.Size = UDim2.new(0, 162, 0, 48)
+CodePet.Style = Enum.ButtonStyle.RobloxRoundButton
+CodePet.Font = Enum.Font.SourceSansBold
+CodePet.Text = "Code Pet"
+CodePet.TextColor3 = Color3.fromRGB(0, 0, 0)
+CodePet.TextSize = 25.000
+CodePet.MouseButton1Down:connect(function()
+	local args = {
+		[1] = game:GetService("ReplicatedStorage")["Code_Folder"],
+		[2] = "OpCode4",
+	}
+
+
+	game:GetService("Players")["LocalPlayer"].PlayerGui.Codes.CodeGui.RedeemButton["Redeem Button_Script"].FreePet:FireServer(unpack(args))
+end)
+
+TextLabel_3.Name = ""
+TextLabel_3.Parent = Main
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.62624073, 0, 0.833857417, 0)
+TextLabel_3.Size = UDim2.new(0, 137, 0, 23)
+TextLabel_3.Font = Enum.Font.Cartoon
+TextLabel_3.Text = "spam button for more"
+TextLabel_3.TextColor3 = Color3.fromRGB(4, 255, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Name = ""
+TextLabel_4.Parent = Main
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.598932326, 0, 0.0337552726, 0)
+TextLabel_4.Size = UDim2.new(0, 128, 0, 60)
+TextLabel_4.Font = Enum.Font.FredokaOne
+TextLabel_4.Text = "Pet Clicks Simulator"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
