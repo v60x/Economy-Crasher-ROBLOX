@@ -1,15 +1,17 @@
+--Sorry, game was closed!
+
 local EC = Instance.new("ScreenGui")
 local Main = Instance.new("ImageButton")
 local Title = Instance.new("TextLabel")
 local Title_2 = Instance.new("TextLabel")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
-local AutoClicker = Instance.new("TextButton")
-local Shop = Instance.new("TextButton")
-local Worlds = Instance.new("TextButton")
-local CodePet = Instance.new("TextButton")
+local FunctionBroken = Instance.new("TextButton")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
+local FunctionBroken_2 = Instance.new("TextButton")
+local FunctionBroken_3 = Instance.new("TextButton")
+local FunctionBroken_4 = Instance.new("TextButton")
 
 
 
@@ -81,90 +83,26 @@ TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
-AutoClicker.Name = "AutoClicker"
-AutoClicker.Parent = Main
-AutoClicker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoClicker.Position = UDim2.new(0.0259210523, 0, 0.33485508, 0)
-AutoClicker.Size = UDim2.new(0, 162, 0, 48)
-AutoClicker.Style = Enum.ButtonStyle.RobloxRoundButton
-AutoClicker.Font = Enum.Font.SourceSansBold
-AutoClicker.Text = "Autoclicker"
-AutoClicker.TextColor3 = Color3.fromRGB(0, 0, 0)
-AutoClicker.TextSize = 25.000
-AutoClicker.MouseButton1Down:connect(function()
-	while wait() do
-		workspace.Events.AddClick:FireServer()
-
-	end
-end)
-
-Shop.Name = "Shop"
-Shop.Parent = Main
-Shop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Shop.Position = UDim2.new(0.0259210523, 0, 0.634035408, 0)
-Shop.Size = UDim2.new(0, 162, 0, 48)
-Shop.Style = Enum.ButtonStyle.RobloxRoundButton
-Shop.Font = Enum.Font.SourceSansBold
-Shop.Text = "Shop TP"
-Shop.TextColor3 = Color3.fromRGB(0, 0, 0)
-Shop.TextSize = 25.000
-Shop.MouseButton1Down:connect(function()
-	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
-	local location = CFrame.new(885.218506, 1022.69287, -579.251221)
-	local humanoid = game.Players.LocalPlayer.Character.Humanoid
-	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-	wait(0.1)
-	pl.CFrame = location
-end)
-
-Worlds.Name = "Worlds"
-Worlds.Parent = Main
-Worlds.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Worlds.Position = UDim2.new(0.598932326, 0, 0.33485508, 0)
-Worlds.Size = UDim2.new(0, 162, 0, 48)
-Worlds.Style = Enum.ButtonStyle.RobloxRoundButton
-Worlds.Font = Enum.Font.SourceSansBold
-Worlds.Text = "Worlds"
-Worlds.TextColor3 = Color3.fromRGB(0, 0, 0)
-Worlds.TextSize = 25.000
-Worlds.MouseButton1Down:connect(function()
-	local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
-	local location = CFrame.new(1418.98059, 1006.5567, -510.744293)
-	local humanoid = game.Players.LocalPlayer.Character.Humanoid
-	humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-	wait(0.1)
-	pl.CFrame = location
-end)
-
-CodePet.Name = "CodePet"
-CodePet.Parent = Main
-CodePet.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CodePet.Position = UDim2.new(0.598932326, 0, 0.634035528, 0)
-CodePet.Size = UDim2.new(0, 162, 0, 48)
-CodePet.Style = Enum.ButtonStyle.RobloxRoundButton
-CodePet.Font = Enum.Font.SourceSansBold
-CodePet.Text = "Code Pet"
-CodePet.TextColor3 = Color3.fromRGB(0, 0, 0)
-CodePet.TextSize = 25.000
-CodePet.MouseButton1Down:connect(function()
-	local args = {
-		[1] = game:GetService("ReplicatedStorage")["Code_Folder"],
-		[2] = "OpCode4",
-	}
-
-
-	game:GetService("Players")["LocalPlayer"].PlayerGui.Codes.CodeGui.RedeemButton["Redeem Button_Script"].FreePet:FireServer(unpack(args))
-end)
+FunctionBroken.Name = "Function Broken"
+FunctionBroken.Parent = Main
+FunctionBroken.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FunctionBroken.Position = UDim2.new(0.0587261319, 0, 0.33485508, 0)
+FunctionBroken.Size = UDim2.new(0, 162, 0, 48)
+FunctionBroken.Style = Enum.ButtonStyle.RobloxRoundButton
+FunctionBroken.Font = Enum.Font.SourceSansBold
+FunctionBroken.Text = "Function Broken"
+FunctionBroken.TextColor3 = Color3.fromRGB(0, 0, 0)
+FunctionBroken.TextSize = 25.000
 
 TextLabel_3.Name = ""
 TextLabel_3.Parent = Main
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.62624073, 0, 0.833857417, 0)
-TextLabel_3.Size = UDim2.new(0, 137, 0, 23)
+TextLabel_3.Position = UDim2.new(0.49015823, 0, 0.829638004, 0)
+TextLabel_3.Size = UDim2.new(0, 237, 0, 29)
 TextLabel_3.Font = Enum.Font.Cartoon
-TextLabel_3.Text = "spam button for more"
-TextLabel_3.TextColor3 = Color3.fromRGB(4, 255, 0)
+TextLabel_3.Text = "Function broken:404()"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
@@ -176,8 +114,41 @@ TextLabel_4.BackgroundTransparency = 1.000
 TextLabel_4.Position = UDim2.new(0.598932326, 0, 0.0337552726, 0)
 TextLabel_4.Size = UDim2.new(0, 128, 0, 60)
 TextLabel_4.Font = Enum.Font.FredokaOne
-TextLabel_4.Text = "Pet Clicks Simulator"
+TextLabel_4.Text = "GAME CLOSED"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 14.000
 TextLabel_4.TextWrapped = true
+
+FunctionBroken_2.Name = "Function Broken"
+FunctionBroken_2.Parent = Main
+FunctionBroken_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FunctionBroken_2.Position = UDim2.new(0.598932326, 0, 0.33485508, 0)
+FunctionBroken_2.Size = UDim2.new(0, 162, 0, 48)
+FunctionBroken_2.Style = Enum.ButtonStyle.RobloxRoundButton
+FunctionBroken_2.Font = Enum.Font.SourceSansBold
+FunctionBroken_2.Text = "Function Broken"
+FunctionBroken_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+FunctionBroken_2.TextSize = 25.000
+
+FunctionBroken_3.Name = "Function Broken"
+FunctionBroken_3.Parent = Main
+FunctionBroken_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FunctionBroken_3.Position = UDim2.new(0.0587261319, 0, 0.630213737, 0)
+FunctionBroken_3.Size = UDim2.new(0, 162, 0, 48)
+FunctionBroken_3.Style = Enum.ButtonStyle.RobloxRoundButton
+FunctionBroken_3.Font = Enum.Font.SourceSansBold
+FunctionBroken_3.Text = "Function Broken"
+FunctionBroken_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+FunctionBroken_3.TextSize = 25.000
+
+FunctionBroken_4.Name = "Function Broken"
+FunctionBroken_4.Parent = Main
+FunctionBroken_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FunctionBroken_4.Position = UDim2.new(0.598932326, 0, 0.592239082, 0)
+FunctionBroken_4.Size = UDim2.new(0, 162, 0, 48)
+FunctionBroken_4.Style = Enum.ButtonStyle.RobloxRoundButton
+FunctionBroken_4.Font = Enum.Font.SourceSansBold
+FunctionBroken_4.Text = "Function Broken"
+FunctionBroken_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+FunctionBroken_4.TextSize = 25.000
